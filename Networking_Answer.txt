@@ -1,0 +1,72 @@
+﻿Answer for Networking Assignment 
+Name:Feysal Ambiya
+1. What is networking in the context of computer systems?
+Networking refers to the practice of connecting two or more computers or electronic devices together to share data, resources (like printers and files), and allow for communication.
+
+
+2. Why is networking important in modern computing environments?
+Networking is crucial in modern computing for several reasons:
+A.Resource Sharing: It allows multiple users to share devices like printers, scanners, and storage, which reduces costs and improves efficiency.
+B.Data and Information Sharing: It enables quick and easy access to data and information for users across different locations.
+C.Communication: It facilitates various forms of communication, such as email, video conferencing, and instant messaging.
+D.Centralized Administration: It allows for centralized management of software, security updates, and data backups.
+
+
+3. Which of the following best describes computer networking?(Answer:B. Sharing of data and resources between computers)
+
+
+4. Differentiate between a network and the internet.
+1.A network is a collection of interconnected devices within a limited scope (e.g., a home, office, or school) that can communicate with each other and share resources. 
+2.The internet is a massive, global "network of networks." It connects millions of private, public, academic, and business networks, allowing devices worldwide to communicate.
+
+
+5. Is the internet a type of network or a collection of networks? Explain.
+The internet is a collection of networks. It is an interconnected system of computer networks that use the standard Internet Protocol Suite (TCP/IP) to link devices worldwide. It is not a single network but a vast infrastructure that connects countless individual networks together.
+
+
+6. What are some common uses of the internet in networking? (Mention at least 3)
+1. World Wide Web (WWW):Accessing websites for information, entertainment, and e-commerce.
+2. Electronic Mail (Email):Sending and receiving messages and files.
+3.Cloud Computing and Storage:Using remote servers for data storage, processing, and accessing software services.
+
+
+7. Name and briefly describe any three network topologies.
+1. Star Topology:All devices are connected to a central device, like a hub or a switch. If the central device fails, the entire network goes down.
+2. Bus Topology: All devices share a single communication line or cable (the "bus"). Data sent by one device is received by all others, but only the intended recipient accepts and processes it.
+3.  Mesh Topology:Every device is connected directly to every other device on the network. This creates multiple paths for data and offers high redundancy but is expensive and complex to set up.
+
+
+8.In which topology does every device connect to a central hub or switch?(Answer:B.Star)
+
+
+9. What are the advantages and disadvantages of mesh topology?
+A.Advantages: It is highly reliable and robust because data has multiple paths to travel. The failure of one link does not affect the rest of the network.
+B.Disadvantages: It is expensive and complex to install and maintain due to the large amount of cabling and connections required.
+
+
+10. Define the following network types: LAN, MAN, and WAN.
+1.LAN (Local Area Network): A network that covers a small geographical area, such as a single building or a campus.
+2.MAN (Metropolitan Area Network):A network that spans a larger area than a LAN, such as a city or a large campus.
+3.WAN (Wide Area Network):A network that extends over a large geographical area, often connecting multiple cities, states, or even countries. The internet is the largest example of a WAN.
+
+
+11. Which type of network is most commonly used in schools and small offices?Why?
+LAN (Local Area Network)is most commonly used. This is because it is ideal for connecting devices within a limited physical area, providing high-speed connectivity for sharing local resources like files, printers, and a single internet connection efficiently and cost-effectively.
+
+
+12. Which network type covers the largest geographical area?(Answer:D. WAN)
+
+
+13. List and define the function of any four common networking devices.
+1.Router:A device that connects different networks together and forwards data packets between them. It determines the best path for data to travel across networks.
+2.Switch:A device that connects multiple devices within the same network (a LAN). It intelligently forwards data only to the specific device that is the intended recipient.
+3.Hub: A basic networking device that connects multiple devices in a LAN. Unlike a switch, a hub broadcasts any data it receives to all connected devices.
+4.Modem:A device that converts digital signals from a computer into analog signals for transmission over a communication line (like a phone line or cable) and vice versa. It connects a LAN to the internet.
+
+
+14. What is the difference between a switch and a hub?
+1.Hub: is a non-intelligent device that receives data and broadcasts it to every port and every connected device.
+2. Switch: is an intelligent device that can identify the intended recipient of the data and sends it only to the specific port connected to that device, which reduces network traffic and improves performance.
+
+
+15. A router is used to connect different networks together.(Answer=True)
