@@ -1,0 +1,184 @@
+﻿Networking Assignment 2 Answers 
+Name Feysal Ambiya 
+Name Feysal Ambiya 
+Section 1: Networking Cables and Connectors
+1.Main differences between STP and UTP cables:
+
+
+✓STP (Shielded Twisted Pair): Has a foil or braided shield around the twisted pairs to reduce electromagnetic interference (EMI). More expensive and bulkier.
+
+
+✓UTP (Unshielded Twisted Pair): No shielding, more susceptible to EMI. Cheaper, more flexible, and commonly used in home and office networks.
+
+
+2.Advantages and disadvantages of STP cables:
+
+
+Advantages:
+Reduces EMI, making it suitable for noisy environments (e.g., industrial settings).
+Better performance for high-speed networks over longer distances.
+
+
+Disadvantages:
+More expensive than UTP.
+Bulkier and less flexible, harder to install in tight spaces.
+
+
+3.Coaxial cable definition and two main uses:
+Definition: A cable with a central conductor surrounded by a shield, separated by a dielectric insulator, used for high-frequency signals.
+Uses:
+✓Cable television (TV) signal transmission.
+✓Broadband internet connections.
+
+
+4.Function of a BNC connector and typical use:
+Function: A BNC (Bayonet Neill-Concelman) connector locks coaxial cables securely, ensuring reliable signal transmission.
+Typical use: Used in video equipment, older Ethernet networks (10BASE2), and test equipment like oscilloscopes.
+
+
+5.Differences between RJ45 and RJ11 connectors:
+
+
+Number of pins:
+RJ45: 8 pins.
+RJ11: 6 pins (commonly uses 2 or 4).
+Use in networking or telephony:
+RJ45: Used for Ethernet networking (e.g., connecting computers to routers).
+RJ11: Used for telephone lines (e.g., connecting phones to wall jacks).
+
+
+6.Maximum data transmission capacity and range of UTP Category 5e and Category 6:
+
+
+Category 5e:
+
+
+Capacity: Up to 1 Gbps (Gigabit Ethernet).
+
+
+Range: Up to 100 meters.
+
+
+Category 6:
+
+
+Capacity: Up to 10 Gbps (for shorter distances, ~55 meters).
+
+
+Range: Up to 100 meters for 1 Gbps, 55 meters for 10 Gbps.
+
+
+7.Two main types of Fiber Optic cables:
+✓Single-mode Fiber: Uses a single light path for long-distance, high-speed transmission (e.g., telecom backbones).
+✓Multi-mode Fiber: Uses multiple light paths for shorter distances, higher bandwidth in LANs.
+8.Difference between Single-mode and Multi-mode fiber:
+✓Single-mode: Smaller core (8-10 microns), single light path, longer distances (up to 100 km), used for telecom and WANs.
+✓Multi-mode: Larger core (50-62.5 microns), multiple light paths, shorter distances (up to 2 km), used for LANs and data centers.
+9.Two advantages of fiber optic cables over copper cables:
+✓Higher bandwidth and faster data transmission (up to 100 Gbps or more).
+✓Immune to EMI, ensuring reliable performance in noisy environments.
+10.Color coding for T568A and T568B standards:
+✓T568A:
+Pin 1: White/Green, Pin 2: Green, Pin 3: White/Orange, Pin 4: Blue, Pin 5: White/Blue, Pin 6: Orange, Pin 7: White/Brown, Pin 8: Brown.
+✓T568B:
+Pin 1: White/Orange, Pin 2: Orange, Pin 3: White/Green, Pin 4: Blue, Pin 5: White/Blue, Pin 6: Green, Pin 7: White/Brown, Pin 8: Brown.
+
+
+11.Straight-through cable use and two examples:
+Use: Connects dissimilar devices (e.g., computer to switch or router to switch).
+Examples:
+Connecting a PC to a switch in an office LAN.
+Connecting a router to a hub in a home network.
+12.Crossover cable use and one real-world use case:
+Use: Connects similar devices (e.g., computer to computer or switch to switch).
+Real-world use case: Connecting two PCs directly to share files without a switch.
+13.Two tools for creating or testing Ethernet cables:
+✓Crimping tool: Used to attach RJ45 connectors to twisted pair cables.
+✓Cable tester: Verifies connectivity and detects wiring faults in Ethernet cables.
+14.Fill in the blanks:
+A straight-through cable connects a computer to a switch/router.
+A crossover cable connects a computer to a computer or a switch to a switch.
+15.Comparison of coaxial, twisted pair, and fiber optic cables:
+Cables 
+	Difference in terms of Cost
+	Difference in terms of Speed
+	Susceptibility to interference 
+	Twisted pair
+	Twisted Pair (UTP/STP): Low (UTP cheapest, STP slightly more).
+Fiber Optic:  
+	Up to 10 Gbps (Cat 6/6a).
+	High for UTP, low for STP (due to shielding).
+	Fiber Optic
+	High, due to materials and installation complexity.
+	Up to 100 Gbps or more.
+	None, immune to EMI.
+	Coaxial
+	Moderate, more than UTP but less than fiber.
+	Up to 1 Gbps (broadband).
+	Moderate, shielded but less than STP.
+	
+
+Section 2: Communication Models
+
+
+16.Communication model definition:
+A framework that describes how data is transmitted between devices in a network, including sender, receiver, message, medium, and protocols.
+17.Three basic types of data flow with examples:
+✓Simplex: One-way communication (e.g., TV broadcast).
+✓Half-Duplex: Two-way, one at a time (e.g., walkie-talkie).
+✓Full-Duplex: Two-way simultaneous (e.g., phone call).
+18.Differences between Simplex, Half-Duplex, and Full-Duplex:
+✓Simplex: Data flows one way only (e.g., radio broadcast).
+✓Half-Duplex: Data flows both ways, but not simultaneously (e.g., push-to-talk apps).
+✓Full-Duplex: Data flows both ways simultaneously (e.g., video calls).
+19.Importance of a protocol in a communication model:
+Protocols define rules for data transmission, ensuring devices understand each other, maintaining reliability, and enabling interoperability (e.g., TCP ensures reliable delivery).
+
+
+Section 3: OSI Model (In Detail)
+
+
+20.Basic elements of a communication system:
+✓Sender: Initiates the message (e.g., a computer sending data).
+✓Receiver: Receives the message (e.g., a server).
+✓Message: Data being transmitted.
+✓Medium: Physical or wireless path (e.g., Ethernet cable, Wi-Fi).
+✓Protocol: Rules governing communication (e.g., TCP/IP).
+21.Seven layers of the OSI model (Top to Bottom):
+✓Application,✓ Presentation,✓ Session, ✓Transport, ✓Network,✓ Data Link, ✓Physical.
+22.Match OSI layers with protocols:
+a. Application: HTTP
+b. Transport: TCP
+c. Network: IP
+d. Data Link: Ethernet
+e. Physical: Fiber Optic Cable
+23.Main function of the Transport Layer (Layer 4):
+Ensures reliable end-to-end data transfer, including error checking, segmentation, and flow control.
+Protocols Used in this layer are: ✓TCP (reliable), ✓UDP (fast, less reliable).
+24.Layer for IP addressing and its role:
+Layer: Network Layer (Layer 3).
+Role: Assigns IP addresses for logical addressing, routes packets across networks, and handles packet fragmentation/reassembly.
+25.Data Unit Names:
+Layer 4 (Transport): Segment
+Layer 3 (Network): Packet
+Layer 2 (Data Link): Frame
+Layer 1 (Physical): Bit
+26.Differences between router, switch, and hub, with OSI layers:
+✓Router: Connects networks, uses IP addresses (Network Layer, Layer 3).
+✓Switch: Connects devices in a LAN, uses MAC addresses (Data Link Layer, Layer 2).
+✓Hub: Broadcasts data to all devices, basic connectivity (Physical Layer, Layer 1).
+27.What happens at each OSI layer when sending a file:
+✓Application: File access via app (e.g., FTP).
+✓Presentation: File formatted/encrypted (e.g., to PDF).
+✓Session: Session established between computers.
+✓Transport: File broken into segments, numbered (TCP).
+✓Network: Segments get IP addresses, routed (IP).
+✓Data Link: Packets framed with MAC addresses (Ethernet).
+✓Physical: Frames sent as bits over cable/Wi-Fi.
+28.Importance of the OSI model:
+Standardizes network communication, aiding design, troubleshooting, and interoperability across different systems.
+29.Real-life analogy for OSI model:
+Like sending a package: Application (writing letter), Presentation (translating), Session (starting conversation), Transport (numbering pages), Network (choosing postal route), Data Link (addressing envelope), Physical (delivering by truck).
+30.OSI vs. TCP/IP model:
+✓Similarity: Both use layered architectures for network communication.
+✓Difference: OSI has 7 layers (theoretical), TCP/IP has 4 layers (practical, combines Application/Presentation/Session).
