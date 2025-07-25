@@ -1,0 +1,169 @@
+﻿Assignment 03
+
+
+Name Feysal Ambiya 
+
+
+ Part A - IP Addressing Basics
+
+
+1.What is an IP address and why is it important in a network?
+
+
+   An IP address is a unique identifier assigned to each device on a network, like a home address for your computer or phone. It’s crucial because it allows devices to find and communicate with each other, ensuring data packets reach the right destination. Without it, devices wouldn’t know where to send or receive info, making networking impossible.
+
+
+2.Differentiate between IPv4 and IPv6 in terms of:
+   - Address length:  
+     - IPv4: 32 bits (4 bytes).  
+     - IPv6: 128 bits (16 bytes).  
+   - Notation format:  
+     - IPv4: Decimal, four octets separated by dots (e.g., 192.168.1.1).  
+     - IPv6: Hexadecimal, eight groups separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).  
+   - Number of available addresses:  
+     - IPv4: ~4.3 billion (2³²).  
+     - IPv6: ~340 undecillion (2¹²⁸), practically unlimited.
+
+
+3. Write the binary equivalent of the IPv4 address 192.168.10.1.
+
+
+   Convert each octet to 8-bit binary:  
+   - 192 = 11000000  
+   - 168 = 10101000  
+   - 10 = 00001010  
+   - 1 = 00000001  
+   Answer: 11000000.10101000.00001010.00000001
+
+
+4.Convert the binary IP address 11000000.10101000.00000001.00000010 to decimal.
+   Convert each binary octet to decimal:  
+   - 11000000 = 192  
+   - 10101000 = 168  
+   - 00000001 = 1  
+   - 00000010 = 2  
+   Answer: 192.168.1.2
+
+
+5.What are the ranges of Class A, B, and C IPv4 addresses? 
+   -Class A: 1.0.0.0 to 126.255.255.255 (first bit = 0).  
+   -Class B: 128.0.0.0 to 191.255.255.255 (first two bits = 10).  
+   -Class C: 192.0.0.0 to 223.255.255.255 (first three bits = 110).
+
+
+6.Which IP class does the address 172.16.5.4 belong to?
+   The address 172.16.5.4 falls in the range 128.0.0.0 to 191.255.255.255.  
+   Answer: Class B (first two bits = 10).
+
+
+7.What is the difference between public IP and private IP? List private IP ranges.
+   -Public IP: Assigned by ISPs, accessible from the internet, used for servers or websites.  
+   -Private IP: Used in local networks, not routable on the public internet, for internal devices.  
+   -Private IP ranges:  
+     - 10.0.0.0 – 10.255.255.255 (10.0.0.0/8)  
+     - 172.16.0.0 – 172.31.255.255 (172.16.0.0/12)  
+     - 192.168.0.0 – 192.168.255.255 (192.168.0.0/16)
+
+
+8.What is the role of the loopback address in IP networking?
+   The loopback address (127.0.0.0/8, typically 127.0.0.1) is used for testing a device’s network stack. It lets a device send data to itself, helping troubleshoot network issues without involving external networks.
+
+
+9.Explain the use of static IP vs dynamic IP with examples.
+* Static IP: Manually assigned, doesn’t change. Used for devices needing consistent addresses, like servers or printers.Example: A web server at 192.168.1.100 always uses that address for access.  
+* Dynamic IP: Assigned automatically by a DHCP server, can change. Common for devices like laptops or phones. *Example*: Your phone gets a new IP like 192.168.1.105 when it joins a Wi-Fi network.
+
+
+10. What is the default subnet mask for:
+    - Class A: 255.0.0.0 (/8)  
+    - Class B: 255.255.0.0 (/16)  
+    - Class C: 255.255.255.0 (/24)
+
+
+Part B - Subnetting Concepts & Calculations
+
+
+11. What is subnetting and why is it used?
+    Subnetting divides a large network into smaller subnetworks (subnets) to improve efficiency, security, and management. It reduces network congestion, isolates segments for security, and optimizes IP address use by allocating only what’s needed.
+
+
+12. Given the IP address 192.168.1.0/24, how many total IP addresses are available?
+    A /24 subnet has 8 host bits (32 – 24 = 8).  
+    Total addresses = 2⁸ = 256.  
+    Answer: 256 IP addresses.
+
+
+13. From question 12, how many usable host IPs are there?
+    Subtract 2 for network and broadcast addresses:  
+    Usable hosts = 256 – 2 = 254.  
+    Answer: 254 usable host IPs.
+
+
+14. How many subnets can be created from a /24 network if you borrow 2 bits?
+    Borrowing 2 bits from the host portion creates subnets.  
+    Number of subnets = 2² = 4.  
+    Answer: 4 subnets.
+
+
+15. What will be the new subnet mask if you borrow 3 bits from a /24 network?
+    Original mask: /24 (255.255.255.0).  
+    Borrowing 3 bits: 24 + 3 = /27.  
+    /27 in decimal: 11111111.11111111.11111111.11100000 = 255.255.255.224.  
+    Answer: 255.255.255.224 (/27).
+
+
+16. Given IP: 192.168.10.0/26
+    - How many hosts per subnet? 
+      Host bits = 32 – 26 = 6.  
+      Total hosts = 2⁶ = 64.  
+      Usable hosts = 64 – 2 = 62.  
+      Answer: 62 hosts per subnet.  
+    - How many subnets can be created? 
+      Default Class C mask is /24. Borrowing 2 bits (26 – 24 = 2).  
+      Number of subnets = 2² = 4.  
+      Answer: 4 subnets.
+
+
+17. Calculate the first and last usable IP address in the subnet 192.168.10.64/26.  
+    - Subnet mask: /26 → 6 host bits → 2⁶ = 64 addresses per subnet.  
+    - Block size: 256 – 192 = 64 (fourth octet increments by 64).  
+    - Subnet range: 192.168.10.64 – 192.168.10.127.  
+    - Network address: 192.168.10.64 (not usable).  
+    - Broadcast address: 192.168.10.127 (not usable).  
+    - First usable IP: 192.168.10.65  
+    - Last usable IP: 192.168.10.126  
+    Answer: 192.168.10.65 – 192.168.10.126
+
+
+18. Identify the network address and broadcast address of 10.0.0.0/22.
+    - /22 → 10 host bits → 2¹⁰ = 1024 addresses.  
+    - Block size: 256 – 252 = 4 (third octet increments by 4).  
+    - Subnet range: 10.0.0.0 – 10.0.3.255.  
+    - Network address: 10.0.0.0  
+    - Broadcast address: 10.0.3.255  
+    Answer: Network: 10.0.0.0, Broadcast: 10.0.3.255
+
+
+19. Fill in the blanks:
+    - CIDR /30 gives ___ usable IP addresses.
+      /30 → 2 host bits → 2² = 4 total addresses.  
+      Usable = 4 – 2 = 2.  
+      Answer: 2 usable IP addresses.  
+    - CIDR /28 supports ___ hosts per subnet.  
+      /28 → 4 host bits → 2⁴ = 16 total addresses.  
+      Usable = 16 – 2 = 14.  
+      Answer: 14 hosts per subnet.
+
+
+20. You are given the address block 172.16.0.0/20.
+    - How many subnets can be created if you want each subnet to support at most 510 hosts?
+      - Need 510 usable hosts.  
+      - Usable hosts = 2ⁿ – 2 ≥ 510 → 2⁹ – 2 = 510 (9 host bits needed).  
+      - New mask: 32 – 9 = /23 (255.255.254.0).  
+      - Original mask: /20. Borrowed bits: 23 – 20 = 3.  
+      - Number of subnets = 2³ = 8.  
+      - Answer: 8 subnets.  
+    - What will be the subnet mask?  
+      - From above, 9 host bits → /23.  
+      - Subnet mask: 255.255.254.0.  
+      - Answer: 255.255.254.0 (/23).
